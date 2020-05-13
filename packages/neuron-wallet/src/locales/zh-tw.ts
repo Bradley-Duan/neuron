@@ -27,10 +27,10 @@ export default {
       },
       edit: {
         label: '編輯',
-        cut: '剪切',
+        cut: '剪下',
         copy: '複製',
-        paste: '粘貼',
-        selectall: '全部選中',
+        paste: '貼上',
+        selectall: '全選',
       },
       tools: {
         label: "工具",
@@ -39,22 +39,22 @@ export default {
       window: {
         label: '視窗',
         minimize: '最小化',
-        close: '關閉窗口',
-      },
+        close: '關閉視窗',
+      }
       help: {
         label: '幫助',
         'nervos-website': 'Nervos 網站',
         'source-code': '原始程式碼',
-        'report-issue': '報告問題',
-        documentation: '使用文檔',
+        'report-issue': '回報問題',
+        documentation: '使用指南',
         faq: 'Neuron FAQ',
         settings: '設定',
-        'export-debug-info': '導出調試信息',
+        'export-debug-info': '導出偵錯信息',
       },
       develop: {
         develop: '開發',
-        'force-reload': '強制重繪',
-        reload: '重繪',
+        'force-reload': '強制重新載入',
+        reload: '重新載入',
         'toggle-dev-tools': '開發者工具',
       },
     },
@@ -63,19 +63,19 @@ export default {
       wallets: '錢包',
     },
     messages: {
-      'failed-to-load-networks': '加載節點失敗。',
+      'failed-to-load-networks': '載入節點失敗。',
       'Networks-will-be-reset': '節點清單將被重置。',
-      'wallet-password-less-than-min-length': '密碼應至少包含{{minPasswordLength}}比特字元。',
-      'wallet-password-more-than-max-length': '密碼不能超過{{maxPasswordLength}}比特字元。',
-      'wallet-password-letter-complexity': '密碼包含大寫字母、小寫字母、數位、特殊符號的至少三類。',
+      'wallet-password-less-than-min-length': '密碼應至少包含{{minPasswordLength}}字元。',
+      'wallet-password-more-than-max-length': '密碼不能超過{{maxPasswordLength}}字元。',
+      'wallet-password-letter-complexity': '密碼需包含大寫字母、小寫字母、數字、特殊符號中的至少三類。',
       'current-wallet-not-set': '未設定當前錢包。',
       'incorrect-password': '密碼不正確。',
-      'invalid-address': '地址 {{address}} 不合法。',
+      'invalid-address': '地址 {{address}} 無效。',
       'codehash-not-loaded': 'codehash 還未加載完成。',
       'wallet-not-found': '未找到錢包 {{id}}。',
       'failed-to-create-mnemonic': '創建助記詞失敗。',
       'network-not-found': '未找到 ID 為 {{id}} 的網絡設定。',
-      'invalid-name': '{{field}} 名稱不合法。',
+      'invalid-name': '{{field}} 名稱無效。',
       'default-network-unremovable': '默認網絡不可删除。',
       'lack-of-default-network': '缺少默認網絡。',
       'current-network-not-set': '當前 CKB 節點 RPC 地址未設定。',
@@ -87,10 +87,10 @@ export default {
       'save-keystore': '保存 Keystore 檔案。',
       'save-extended-public-key': '保存 Extended Public Key。',
       'import-extended-public-key': '導入 Extended Public Key。',
-      'invalid-mnemonic': '助記詞不合法，請檢查。',
+      'invalid-mnemonic': '助記詞無效，請檢查。',
       'unsupported-cipher': '不支持的 Cipher。',
       'capacity-not-enough': '餘額不足。',
-      'capacity-not-enough-for-change': "您需要有足够的餘額來支付找零（至少 61 CKBytes），或者點擊 'Max' 按鈕發送全部餘額。",
+      'capacity-not-enough-for-change': "您需要有足夠的餘額來支付找零（至少 61 CKBytes），或者點擊 'Max' 按鈕發送全部餘額。",
       'live-capacity-not-enough': '可用餘額不足，請等待上一筆交易上鏈。',
       'capacity-too-small': '最小轉帳金額為 {{bytes}} CKBytes。',
       'should-be-type-of': '{{field}} 應該為 {{type}} 類型。',
@@ -106,10 +106,10 @@ export default {
     messageBox: {
       button: {
         confirm: '確定',
-        discard: '放弃',
+        discard: '放棄',
       },
       'send-capacity': {
-        title: '發送交易',
+        title: '送出交易',
       },
       'remove-network': {
         title: '删除網絡',
@@ -139,7 +139,7 @@ export default {
       },
     },
     updater: {
-      'update-not-available': '沒有可供陞級的新版本。',
+      'update-not-available': '沒有可供升級的新版本。',
     },
     common: {
       yes: '是',
@@ -150,6 +150,6 @@ export default {
   },
   'export-debug-info':{
     'export-debug-info': '導出調試信息',
-    'debug-info-exported': '調試信息已被導出至 {{ file }}'
+    'debug-info-exported': '調試信息已被匯出至 {{ file }}'
   }
 }
